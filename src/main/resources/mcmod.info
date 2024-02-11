@@ -1,0 +1,14 @@
+[
+  {
+    "modid": "unifiedexporter",
+    "name": "UnifiedExporter",
+    "description": "All in one exporter for mcmod.cn",
+    "version": "${version}",
+    "mcversion": "${mcversion}",
+    "url": "https://github.com/UniversalExporters/UnifiedExporter",
+    "authorList": [
+      "0999312",
+      "Tapio"
+    ]
+  }
+]
