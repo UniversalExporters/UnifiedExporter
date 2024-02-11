@@ -121,7 +121,6 @@ public class ExportUtils {
             try {
                 if (!export.exists()) export.createNewFile();
                 PrintWriter pw = new PrintWriter(export, "UTF-8");
-
                 for (ItemData data : entry.getValue()) {
                     pw.println(gson.toJson(data));
                 }
@@ -150,7 +149,7 @@ public class ExportUtils {
             minecraft.player.sendStatusMessage(
                     new TextComponentTranslation(
                             "msg.unifiedexporter.itemrender.finished",
-                            String.valueOf(System.currentTimeMillis() - startTime)
+                            String.valueOf((System.currentTimeMillis() - startTime) / 1000.0)
                     ), false);
     }
 

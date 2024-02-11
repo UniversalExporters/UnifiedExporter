@@ -1,9 +1,12 @@
 package org.mmue.unifiedexporter.client.command;
 
+import com.google.common.collect.Lists;
 import net.minecraft.command.ICommandSender;
 import net.minecraftforge.server.command.CommandTreeBase;
 import org.mmue.unifiedexporter.client.itemrender.ItemRender;
 import org.mmue.unifiedexporter.client.itemrender.command.ItemRenderCommand;
+
+import java.util.List;
 
 public class UEClientCommandTree extends CommandTreeBase {
 
@@ -19,6 +22,11 @@ public class UEClientCommandTree extends CommandTreeBase {
 
     @Override
     public String getUsage(ICommandSender sender) {
-        return "cmd.unifiedexporter.help";
+        return "cmd.unifiedexporter.client.help";
+    }
+
+    @Override
+    public List<String> getAliases() {
+        return Lists.newArrayList("uexc");
     }
 }

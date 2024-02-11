@@ -1,0 +1,4 @@
+cmd.unifiedexporter.client.help=/unifiedexporterc itemrender
+msg.unifiedexporter.itemrender.start=物品/实体渲染已开始！
+msg.unifiedexporter.itemrender.running=物品/实体渲染已在进行！
+msg.unifiedexporter.itemrender.finished=物品/实体渲染已结束！耗时%s秒。
